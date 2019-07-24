@@ -1,6 +1,5 @@
 PROJECT NAME
 Bookr
-Bookr
 
 DESCRIPTION
 Pitch: Bookr is your source for all things Text Book. Picture the AirBNB of text books, a social platform for peer reviewed text books.
