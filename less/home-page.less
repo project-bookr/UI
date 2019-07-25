@@ -4,55 +4,95 @@
     justify-content: center;
     align-items: center;
 
-    h1 {
-        font-size:7rem;
-        margin-bottom: 2rem;
-        color: #7BB2D9;
-    }
+        h1 {
+            font-size:7rem;
+            margin-bottom: 2rem;
+            color: #7BB2D9;
 
-    .book-pic {
-        margin-bottom: 2rem;
-        width: 40%;
-        border: 1px solid #A39BA8;
-    }
+            @media @phone {
+                font-size: 6rem;
+            }
+        }
 
-   .top {
-        font-size: 2.5rem;
-        width: 70%;
-        text-align: center;
-        
-    }
+        h1:hover {
+            position:relative;
+            bottom: -3rem;
+            width: 200px;
+            height:auto;
+            display:block;
+            color: #C1CAD6;
+            z-index:999;
 
-    a {
-        text-decoration: none;
-    }
+             @media @phone {
+                width: 160px;
+            }
+        }
 
-    a .btn {
-        width: 50px;
-        text-align: center;
-        background-color: grey;
-        border: 1px solid black;
-        text-align: center;
-    }
+        .book-pic {
+            margin-bottom: 2rem;
+            width: 40%;
+            border: 1px solid #A39BA8;
+            border-radius: 3rem;
+        }
 
-    .section-bar {
-        background-color: #C1CAD6;
-        width: 90%;
-        height: 2rem;
-        margin-top: 3rem; 
-        margin-bottom: .5rem;
-    }
+        .top {
+            font-size: 2.5rem;
+            width: 70%;
+            text-align: center;
 
-    h2 {
-        font-size: 4rem;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
+                @media @phone {
+                    width: 50%;
+                }
+            }
 
-}
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: black;
+            }
 
-.btm {
-    font-size: 1.5rem;
-    width: 60%;
-    text-align: center;
-}
+            a .btn {
+                width: 8rem;
+                height: 2rem;
+                text-align: center;
+                background-color: #FAF6F6;
+                border: 1px solid #A39BA8;
+                text-align: center;
+                margin-top: 1.5rem;
+                border-radius: 5px;
+            }
+
+            a .btn:hover {
+                background-color: #CDCACA;
+            }
+
+            .section-bar {
+                background-color: #C1CAD6;
+                width: 95%;
+                height: 2rem;
+                margin-top: 3rem; 
+                margin-bottom: .5rem;
+                border: .5px solid black;
+                border-radius: 10px;
+            }
+
+                .section-bar:hover {
+                position:relative;
+                width: 90%;
+                background-color: #7BB2D9;
+                display:block;
+                z-index:999;
+            }
+
+            h2 {
+                font-size: 4rem;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+        }
+
+            .btm {
+                font-size: 1.5rem;
+                width: 60%;
+                text-align: center;
+            }
 }

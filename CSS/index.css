@@ -131,6 +131,8 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Gentium Book Basic', serif;
 }
 .container {
   max-width: 800px;
@@ -148,31 +150,73 @@ html {
   margin-bottom: 2rem;
   color: #7BB2D9;
 }
+@media (max-width: 500px) {
+  .top-section h1 {
+    font-size: 6rem;
+  }
+}
+.top-section h1:hover {
+  position: relative;
+  bottom: -3rem;
+  width: 200px;
+  height: auto;
+  display: block;
+  color: #C1CAD6;
+  z-index: 999;
+}
+@media (max-width: 500px) {
+  .top-section h1:hover {
+    width: 160px;
+  }
+}
 .top-section .book-pic {
   margin-bottom: 2rem;
   width: 40%;
   border: 1px solid #A39BA8;
+  border-radius: 3rem;
 }
 .top-section .top {
   font-size: 2.5rem;
   width: 70%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .top-section .top {
+    width: 50%;
+  }
+}
 .top-section a {
   text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
 }
 .top-section a .btn {
-  width: 50px;
-  background-color: grey;
-  border: 1px solid black;
+  width: 8rem;
+  height: 2rem;
+  background-color: #FAF6F6;
+  border: 1px solid #A39BA8;
   text-align: center;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+}
+.top-section a .btn:hover {
+  background-color: #CDCACA;
 }
 .top-section .section-bar {
   background-color: #C1CAD6;
-  width: 90%;
+  width: 95%;
   height: 2rem;
   margin-top: 3rem;
   margin-bottom: 0.5rem;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+.top-section .section-bar:hover {
+  position: relative;
+  width: 90%;
+  background-color: #7BB2D9;
+  display: block;
+  z-index: 999;
 }
 .top-section h2 {
   font-size: 4rem;
