@@ -126,3 +126,61 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.top-section h1 {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  color: #7BB2D9;
+}
+.top-section .book-pic {
+  margin-bottom: 2rem;
+  width: 40%;
+  border: 1px solid #A39BA8;
+}
+.top-section .top {
+  font-size: 2.5rem;
+  width: 70%;
+  text-align: center;
+}
+.top-section a {
+  text-decoration: none;
+}
+.top-section a .btn {
+  width: 50px;
+  background-color: grey;
+  border: 1px solid black;
+  text-align: center;
+}
+.top-section .section-bar {
+  background-color: #C1CAD6;
+  width: 90%;
+  height: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.top-section h2 {
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.top-section .btm {
+  font-size: 1.5rem;
+  width: 60%;
+  text-align: center;
+}
