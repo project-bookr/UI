@@ -126,3 +126,82 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.nav-bar button {
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  border: solid 0.1ram black;
+  float: right;
+  cursor: pointer;
+}
+.nav-bar button img {
+  width: 150%;
+  height: 150%;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.dropdown a:hover {
+  background-color: gray;
+  color: white;
+}
+.nav-bar:hover .dropdown {
+  display: block;
+  margin-top: 6rem;
+}
