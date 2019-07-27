@@ -4,39 +4,13 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-   
-        h1 {
-            font-size:7rem;
-            margin-bottom: 2rem;
-            color: #7BB2D9;
-            text-align: center;
-
-            @media @phone {
-                font-size: 6rem;
-            }
-        }
-
-        h1:hover {
-            position:relative;
-            bottom: -2rem;
-            width: 800px;
-            height:auto;
-            display:block;
-            color: #C1CAD6;
-            z-index:999;
-
-            @media @phone {
-                width: 160px;
-            }
-        }
-
-
+        
         .about-us {
             display: flex;
-            flex-flow:column wrap;
+            flex-flow:column nowrap;
             justify-content: center;
             align-items: center;
-            flex: 1 0 auto;
+            flex: 10 auto;
             position: relative;
             height: 100vh;
             transform: translateZ(-1px) scale(2);
@@ -45,8 +19,9 @@
         }
 
         .about-us h2 {
-            margin-top:4rem;
             font-size: 5rem;
+            margin-top:4rem;
+            color: #7BB2D9;
         }
 
         .section-bar {
@@ -54,7 +29,7 @@
             width: 95%;
             height: 2rem;
             margin-top: 3rem; 
-            margin-bottom: .5rem;
+            margin-bottom: 3rem;
             border: .5px solid black;
             border-radius: 10px;
         }
@@ -68,7 +43,6 @@
         }
 
         .about-us p{
-            font-size: 1.5rem;
             width: 60%;
             margin-bottom: 3rem;
         }
@@ -82,10 +56,10 @@
         }
 
         .box {
-            width: 60%;
+            width: 45%;
             background-color: #FEFDFD;
-            border: 1px solid #A39BA8;
-            display: inline-block;
+            border: 1px solid black;
+            margin: 1.5rem;
         }
 
         .book {
@@ -95,35 +69,14 @@
         }
 
         .the-team h2 {
-            font-size: 4rem;
-            margin-top: 2rem;
-        }
-
-        .section-bar {
-            background-color: #C1CAD6;
-            width: 95%;
-            height: 2rem;
-            margin-top: 3rem; 
-            margin-bottom: .5rem;
-            border: .5px solid black;
-            border-radius: 10px;
-        }
-
-        .section-bar:hover {
-            position:relative;
-            width: 90%;
-            background-color: #7BB2D9;
-            display:block;
-            z-index:999;
-        }
-
-        h2 {
-            
+             font-size: 5rem;
+            margin-top:4rem;
+            color: #7BB2D9;
         }
 
         .the-team p {
             font-size: 1.5rem;
-            width: 60%;
+            width: 80%;
         }
 }
 

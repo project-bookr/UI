@@ -5,32 +5,18 @@
     align-items: center;
 
         h1 {
-            font-size:7rem;
+            position: relative;
+            bottom: 7.7rem;
+            font-size:8rem;
             margin-bottom: 2rem;
             color: #7BB2D9;
-
-            @media @phone {
-                font-size: 6rem;
-            }
-        }
-
-        h1:hover {
-            position:relative;
-            bottom: -3rem;
-            width: 200px;
-            height:auto;
-            display:block;
-            color: #C1CAD6;
-            z-index:999;
-
-             @media @phone {
-                width: 160px;
-            }
         }
 
         .book-pic {
+            position: relative;
+            bottom: 5rem;
             margin-bottom: 2rem;
-            width: 40%;
+            width: 60%;
             border: 1px solid #A39BA8;
             border-radius: 3rem;
         }
@@ -128,53 +114,166 @@
             margin-bottom: 2rem;
         }
 
-        .grid { 
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 1rem;
-            align-items: center;
+            .grid { 
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-gap: 1rem;
+                align-items: center;
+            }
+            .grid img {
+                border: 1px solid black;
+                box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+                max-width: 100%;
+            }
+
+            .grid .book1:hover {
+                opacity: .5;
+                box-shadow: 8px 8px 5px 0px  rgba(156, 1, 177, 0.534);
+            }
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+        .popup-target {
+            position: fixed;
+            top: 100%;
+            width: 100%;
+            background: rgba(0,0,0,.7);
+            width: 75%;
+            height: 75%;
+            opacity: 0;
+            -webkit-transition: opacity .5s ease-in-out;
+            -moz-transition: opacity .5s ease-in-out;
+            -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+            overflow: hidden;
         }
-        .grid img {
-            border: 1px solid black;
-            box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+
+        //styles and adds transtion to the picture
+
+        .popup-target img {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left:0;
+            right:0;
+            bottom: 0;
+            height: 60%;
+            width: 45%;
+            box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+            box-sizing: border-box;
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+        }
+
+        a.popup-close {
+            display: block;
+            width:50px;
+            height:50px;
+            box-sizing: border-box;
+            background: white;
+            color: black;
+            text-decoration: none;
+            position: absolute;
+            top: -1px;
+            right: 0;
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+        }
+
+        //provides the left line of the "X"
+
+        a.popup-close:before {
+        content: "";
+            display: block;
+            height: 35px;
+            width: 1px;
+            background: black;
+            position: absolute;
+            left: 25px;
+            top:10px;
+            -webkit-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            -o-transform:rotate(45deg);
+            transform:rotate(45deg);
+        }
+
+        //provides the right line of the "X"
+
+        a.popup-close:after {
+        content: "";
+            display: block;
+            height: 35px;
+            width: 1px;
+            background: black;
+            position: absolute;
+            right: 25px;
+            top:10px;
+            -webkit-transform:rotate(-45deg);
+            -moz-transform:rotate(-45deg);
+            -o-transform:rotate(-45deg);
+            transform:rotate(-45deg);
+        }
+
+        //performs animation 
+
+        .popup-target:target {
+            opacity: 1;
+            top: 0;
+            bottom: 0;
+        }
+
+        .popup-target:target img {
+            max-height: 100%;
             max-width: 100%;
-            
         }
 
+        //caption to picture
 
-
-        .grid .book1:hover {
-            opacity: .5;
-            box-shadow: 8px 8px 5px 0px  rgba(156, 1, 177, 0.534);
-            }
-
-        .grid .book2:hover {
-            opacity: .5;
-            box-shadow: 2px 2px 6px 0px  rgba(1, 177, 45, 0.534);
-            }
-
-        .grid .book3:hover {
-            opacity: .5;
-            box-shadow: 2px 2px 6px 0px  rgba(177, 159, 1, 0.534);
-            }
-
-        .grid .book4:hover {
-            opacity: .5;
-            box-shadow: 2px 2px 6px 0px  rgba(173, 243, 92, 0.534);
-            }
-
-        .grid .book5:hover {
-            opacity: .5;
-            box-shadow: 2px 2px 6px 0px  rgba(177, 1, 104, 0.534);
-            }
-
-        .grid .book6:hover {
-            opacity: .5;
-            box-shadow: 2px 2px 6px 0px  rgba(255, 13, 1, 0.534);
-            }
-
-
-
+        #caption {
+            margin: auto;
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+            padding: 50px;
+            height: 200px;
+        }
 
 }
+
+
+
+
+
+
+// .grid .book2:hover {
+// opacity: .5;
+// box-shadow: 2px 2px 6px 0px  rgba(1, 177, 45, 0.534);
+// }
+
+// .grid .book3:hover {
+// opacity: .5;
+// box-shadow: 2px 2px 6px 0px  rgba(177, 159, 1, 0.534);
+// }
+
+// .grid .book4:hover {
+// opacity: .5;
+// box-shadow: 2px 2px 6px 0px  rgba(173, 243, 92, 0.534);
+// }
+
+// .grid .book5:hover {
+// opacity: .5;
+// box-shadow: 2px 2px 6px 0px  rgba(177, 1, 104, 0.534);
+// }
+
+// .grid .book6:hover {
+// opacity: .5;
+// box-shadow: 2px 2px 6px 0px  rgba(255, 13, 1, 0.534);
+// }
+
 
