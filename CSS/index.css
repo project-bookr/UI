@@ -461,7 +461,7 @@ footer .footer-text {
 .btm-section .popup-target:target {
   opacity: 1;
   top: 0;
-  bottom: 0;
+  bottom: 1;
 }
 .btm-section .popup-target:target img {
   max-height: 100%;
