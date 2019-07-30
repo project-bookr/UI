@@ -24,6 +24,12 @@
             color: #7BB2D9;
         }
 
+        .open_book {
+            width: 50%;
+            border:1px solid black;
+
+        }
+
         .section-bar {
             background-color: #C1CAD6;
             width: 95%;
@@ -52,6 +58,10 @@
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
+
+            @media @phone {
+                flex-flow: column wrap;
+            }
             
         }
 
@@ -60,23 +70,49 @@
             background-color: #FEFDFD;
             border: 1px solid black;
             margin: 1.5rem;
+
+            @media @phone {
+                background-color: #FEFDDF;
+            }
         }
 
         .book {
             width: 40%;
             border-radius: 30%;
             opacity: .8;
+
+            @media @phone {
+                display: none; 
+            }
+        }
+
+        .btn {
+            display: none;
+
+            @media @phone {
+                display: block;
+            }
         }
 
         .the-team h2 {
              font-size: 5rem;
             margin-top:4rem;
             color: #7BB2D9;
+
+            @media @phone {
+                text-align: center;
+                padding-bottom: 3rem;
+        }
         }
 
         .the-team p {
             font-size: 1.5rem;
             width: 80%;
+
+            @media @phone {
+                width: 100%;
+                text-align: center;
+        }
         }
 }
 

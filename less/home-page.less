@@ -10,6 +10,10 @@
             font-size:8rem;
             margin-bottom: 2rem;
             color: #7BB2D9;
+
+            @media @phone {
+                bottom: 1rem;
+            }
         }
 
         .book-pic {
@@ -19,6 +23,10 @@
             width: 60%;
             border: 1px solid #A39BA8;
             border-radius: 3rem;
+
+            @media @phone {
+                display: none; 
+            }
         }
 
         .top {
@@ -119,11 +127,20 @@
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
                 grid-gap: 1rem;
                 align-items: center;
+
+                @media @phone {
+                    display: flex;
+                    flex-flow: column wrap;
+                }
             }
             .grid img {
                 border: 1px solid black;
                 box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
                 max-width: 100%;
+
+                @media @phone {
+                    margin: 1rem;
+                }
             }
 
             .grid .book1:hover {
@@ -146,6 +163,10 @@
             -o-transition: opacity .5s ease-in-out;
             transition: opacity .5s ease-in-out;
             overflow: hidden;
+
+            @media @phone {
+                background: rgba(2, 164, 192, 0.836)
+            }
         }
 
         //styles and adds transtion to the picture
@@ -165,6 +186,11 @@
             -moz-transition: .5s ease-in-out;
             -o-transition: .5s ease-in-out;
             transition: .5s ease-in-out;
+
+            @media @phone {
+                height: 45%;
+                width: 45%;
+            }
         }
 
         a.popup-close {
