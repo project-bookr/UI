@@ -378,8 +378,8 @@ footer .footer-text {
   top: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
-  width: 75%;
-  height: 75%;
+  max-width: 55%;
+  height: 55%;
   opacity: 0;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -399,8 +399,8 @@ footer .footer-text {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 60%;
-  width: 45%;
+  max-width: 70%;
+  max-height: 70%;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   -webkit-transition: 0.5s ease-in-out;
@@ -410,8 +410,8 @@ footer .footer-text {
 }
 @media (max-width: 500px) {
   .btm-section .popup-target img {
-    height: 45%;
-    width: 45%;
+    height: 55%;
+    width: 55%;
   }
 }
 .btm-section a.popup-close {
@@ -474,7 +474,7 @@ footer .footer-text {
   max-width: 700px;
   text-align: center;
   color: white;
-  padding: 50px;
+  padding: 30px;
   height: 200px;
 }
 .about {
@@ -510,8 +510,13 @@ footer .footer-text {
   }
 }
 .about .open_book {
-  width: 50%;
-  border: 1px solid black;
+  width: 55%;
+  border: 1px solid #373E40;
+}
+@media (max-width: 500px) {
+  .about .open_book {
+    opacity: 0.7;
+  }
 }
 .about .section-bar {
   background-color: #BDD4E7;

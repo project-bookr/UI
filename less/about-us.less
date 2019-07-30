@@ -33,9 +33,13 @@
         }
 
         .open_book {
-            width: 50%;
-            border:1px solid black;
-        }
+            width: 55%;
+            border:1px solid @onyx;
+
+                @media @phone {
+                    opacity: .7;
+                }
+         }
 
         .section-bar {
             background-color: @pale-aqua;
