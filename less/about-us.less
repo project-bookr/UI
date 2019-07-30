@@ -4,7 +4,7 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-        
+
         .about-us {
             display: flex;
             flex-flow:column nowrap;
@@ -15,35 +15,43 @@
             height: 100vh;
             transform: translateZ(-1px) scale(2);
             z-index: -1;
-            
+
         }
 
         .about-us h2 {
-            font-size: 5rem;
+            font-size: 6rem;
             margin-top:4rem;
-            color: #7BB2D9;
+            color: @onyx;
+            -webkit-text-stroke-width: .1rem;
+            -webkit-text-stroke-color: @pale-pink;
+
+                @media @phone {
+                    color: @pale-pink;
+                    -webkit-text-stroke-width: .2rem;
+                    -webkit-text-stroke-color: @onyx;
+                }
         }
 
         .open_book {
             width: 50%;
             border:1px solid black;
-
         }
 
         .section-bar {
-            background-color: #C1CAD6;
+            background-color: @pale-aqua;
             width: 95%;
             height: 2rem;
             margin-top: 3rem; 
             margin-bottom: 3rem;
-            border: .5px solid black;
+            border: @old-lav-b;
             border-radius: 10px;
         }
 
         .section-bar:hover {
             position:relative;
-            width: 90%;
-            background-color: #7BB2D9;
+            width: 95%;
+            background-color: @old-lav;
+            border: @pale-aqua-b;
             display:block;
             z-index:999;
         }
@@ -62,17 +70,32 @@
             @media @phone {
                 flex-flow: column wrap;
             }
-            
+
+            h2 {
+                font-size: 6rem;
+                margin-top:4rem;
+                color: @onyx;
+                -webkit-text-stroke-width: .1rem;
+                -webkit-text-stroke-color: @pale-pink;
+
+                 @media @phone {
+                     color: @pale-pink;
+                     -webkit-text-stroke-width: .1rem;
+                    -webkit-text-stroke-color: @onyx;
+
+                 }
+            }
+
         }
 
         .box {
             width: 45%;
-            background-color: #FEFDFD;
+            background-color: #F3F3F7;
             border: 1px solid black;
             margin: 1.5rem;
 
             @media @phone {
-                background-color: #FEFDDF;
+                background-color: #F9F9FD;
             }
         }
 
@@ -81,9 +104,15 @@
             border-radius: 30%;
             opacity: .8;
 
-            @media @phone {
-                display: none; 
+             @media @phone {
+                 display: none; 
             }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: black;
         }
 
         .btn {
@@ -91,28 +120,36 @@
 
             @media @phone {
                 display: block;
-            }
+                width: 8rem;
+                height: 2rem;
+                text-align: center;
+                background-color: #FAF6F6;
+                border: 1px solid #A39BA8;
+                text-align: center;
+                padding-top: .3rem;
+                border-radius: 5px;
+             }
         }
 
-        .the-team h2 {
-             font-size: 5rem;
+        .the-team h3 {
+            font-size: 5rem;
             margin-top:4rem;
-            color: #7BB2D9;
+            color: #373E40;
 
-            @media @phone {
+             @media @phone {
                 text-align: center;
                 padding-bottom: 3rem;
-        }
+            }
         }
 
         .the-team p {
             font-size: 1.5rem;
             width: 80%;
 
-            @media @phone {
-                width: 100%;
-                text-align: center;
-        }
+             @media @phone {
+                 width: 100%;
+                 text-align: center;
+            }
         }
 }
 
