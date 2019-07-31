@@ -1,0 +1,69 @@
+ .contact_us {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // flex-wrap: wrap;
+    width: 100%;
+    // margin: auto;
+    // flex-flow: column wrap;
+    
+    h1{
+    // width: 100%
+    // display: flex;
+    overflow: hidden; 
+    color: @main-color; 
+    white-space: nowrap; 
+    margin: 1rem auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+
+    }
+
+    p{
+        display: flex;
+        text-align: center;
+        padding: 1%;
+        // border: none;
+        font-size: 2rem;
+        overflow: hidden; 
+        // white-space: nowrap; 
+        margin: 1rem auto; 
+        letter-spacing: .15em; 
+        // animation-delay: 3s;
+        animation-duration: 5s;
+        animation-name: contacts;
+        
+    }
+ }
+
+  @keyframes contacts{
+    0% {
+        transform: scale(1);
+        opacity: 0;
+        
+      }
+    50% {
+        transform: scale(1);
+        opacity: 0;
+        
+      }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    
+    
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 33rem}
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    100% { border-color: transparent; }
+  }
