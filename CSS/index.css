@@ -161,21 +161,20 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.nav-bar {
+.nav-bar1 {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 1rem;
 }
 @media (max-width: 500px) {
-  .nav-bar {
+  .nav-bar1 {
     justify-content: center;
     height: 10rem;
-    margin: 1rem;
     text-align: center;
   }
 }
-.nav-bar button {
+.nav-bar1 button {
   width: 6rem;
   height: 6rem;
   padding: 1rem;
@@ -188,16 +187,16 @@ body {
   float: right;
   cursor: pointer;
 }
-.nav-bar button img {
+.nav-bar1 button img {
   width: 150%;
   height: 150%;
 }
-.nav-bar .dropdown {
+.nav-bar1 .dropdown {
   display: none;
   position: absolute;
   z-index: 1;
 }
-.nav-bar .dropdown a {
+.nav-bar1 .dropdown a {
   float: none;
   padding: 12px 16px;
   text-decoration: none;
@@ -208,18 +207,78 @@ body {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .nav-bar .dropdown a {
+  .nav-bar1 .dropdown a {
     display: inline-flex;
     padding: 0.1rem 1rem;
   }
 }
-.nav-bar .dropdown a:hover {
+.nav-bar1 .dropdown a:hover {
   background-color: #6F5E76;
   color: white;
 }
-.nav-bar:hover .dropdown {
+.nav-bar1:hover .dropdown {
   display: block;
   margin-top: 6rem;
+}
+.nav-bar2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .nav-bar2 {
+    justify-content: center;
+    height: 10rem;
+    text-align: center;
+  }
+}
+.nav-bar2 button {
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+.nav-bar2 button img {
+  width: 150%;
+  height: 150%;
+}
+.nav-bar2 .dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.nav-bar2 .dropdown a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-flex;
+  text-align: right;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .nav-bar2 .dropdown a {
+    display: inline-flex;
+    padding: 0.1rem 1rem;
+  }
+}
+.nav-bar2 .dropdown a:hover {
+  background-color: #6F5E76;
+  color: white;
+}
+.nav-bar2:hover .dropdown {
+  display: block;
+  margin-top: 2rem;
+  padding-right: 6rem;
 }
 footer {
   display: flex;
@@ -488,7 +547,7 @@ footer .footer-text button:hover a {
   bottom: 1;
 }
 .btm-section .popup-target:target img {
-  max-height: 100%;
+  max-height: 65%;
   max-width: 100%;
 }
 .btm-section #caption {
