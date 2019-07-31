@@ -296,9 +296,8 @@ footer .footer-text {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 .top-section .dropdown-content a {
   color: black;
@@ -307,7 +306,7 @@ footer .footer-text {
   display: block;
 }
 .top-section .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: black;
 }
 .top-section .show {
   display: block;
@@ -327,7 +326,6 @@ footer .footer-text {
   background-color: #6F5E76;
   border: 0.1rem solid #BDD4E7;
   display: block;
-  z-index: 999;
 }
 .top-section h2 {
   font-size: 4rem;
@@ -359,7 +357,6 @@ footer .footer-text {
   background-color: #6F5E76;
   border: 0.1rem solid #BDD4E7;
   display: block;
-  z-index: 999;
 }
 .btm-section h2 {
   font-size: 4rem;
@@ -406,6 +403,7 @@ footer .footer-text {
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   overflow: hidden;
+  z-index: 1;
 }
 @media (max-width: 500px) {
   .btm-section .popup-target {

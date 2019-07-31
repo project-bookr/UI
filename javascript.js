@@ -11,11 +11,5 @@ booksImg1.src = 'images/book.jpeg';
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
-window.onclick = function(event) {
-  if (!event.target.matches('.signbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-  }
-}
 // const hColor = document.querySelectorAll('h2');
 // hColor.style.color = 'pink';
