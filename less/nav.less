@@ -5,9 +5,9 @@
   margin: 1rem;
   @media @phone {
     justify-content: center;
-    height: 7rem;
+    height: 10rem;
     margin: 1rem;
-    
+    text-align: center;
   }
 
   button {
@@ -23,13 +23,12 @@
     float: right;
     cursor: pointer;
 
-    
-
     img {
       width: 150%;
       height: 150%;
     }
   }
+
   .dropdown {
     display: none;
     position: absolute;
@@ -44,9 +43,15 @@
       font-size: 2rem;
       color: black;
       cursor: pointer;
+
+      @media @phone{
+        display: inline-flex;
+        padding: 0.1rem 1rem;
+                
+      }
     }
     a:hover {
-      background-color: gray;
+      background-color: @main-color;
       color: white;
     }
   }

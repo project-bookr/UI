@@ -6,10 +6,20 @@
 
         h1 {
             position: relative;
-            bottom: 7.7rem;
-            font-size:8rem;
+            bottom: 6rem;
+            font-size:9rem;
             margin-bottom: 2rem;
-            color: @main-color;
+            // color: @main-color;
+            color: @onyx;
+            -webkit-text-stroke-width: .2rem;
+            -webkit-text-stroke-color: @pale-pink;
+
+            @media @phone {
+                bottom: 1rem;
+                color: @pale-pink;
+                -webkit-text-stroke-width: .2rem;
+                -webkit-text-stroke-color: @onyx;
+            }
         }
 
         .book-pic {
@@ -19,6 +29,10 @@
             width: 60%;
             border: 1px solid #A39BA8;
             border-radius: 3rem;
+
+            @media @phone {
+                display: none; 
+            }
         }
 
         .top {
@@ -34,38 +48,41 @@
             a {
                 text-decoration: none;
                 font-size: 1.5rem;
-                color: black;
+                color: #373E40;
             }
 
             a .btn {
                 width: 8rem;
                 height: 2rem;
                 text-align: center;
-                background-color: #FAF6F6;
-                border: 1px solid #A39BA8;
+                background-color: #FCFCFC;
+                border: 1px solid #373E40;
                 text-align: center;
                 margin-top: 1.5rem;
                 border-radius: 5px;
             }
 
             a .btn:hover {
-                background-color: #CDCACA;
+                background-color: #BDD4E7;
             }
 
             .section-bar {
-                background-color: #C1CAD6;
+                background-color: @pale-aqua;
+                border: @old-lav-b;
                 width: 95%;
                 height: 2rem;
                 margin-top: 3rem; 
                 margin-bottom: .5rem;
-                border: .5px solid black;
                 border-radius: 10px;
             }
 
             .section-bar:hover {
                 position:relative;
-                width: 90%;
-                background-color: @main-color;
+                // width: 90%;
+                // background-color: @main-color;
+                width: 95%;
+                background-color: @old-lav;
+                border: @pale-aqua-b;
                 display:block;
                 z-index:999;
             }
@@ -89,20 +106,23 @@
 .btm-section {
 
       .section-bar {
-            background-color: #C1CAD6;
+            background-color: @pale-aqua;
             width: 95%;
             height: 2rem;
             margin-top: 3rem; 
             margin-bottom: .5rem;
             margin-left: 2rem;
-            border: .5px solid black;
+            border: @old-lav-b;
             border-radius: 10px;
         }
 
             .section-bar:hover {
                 position:relative;
-                width: 90%;
-                background-color: @main-color;
+                // width: 90%;
+                // background-color: @main-color;
+                width: 95%;
+                background-color: @old-lav;
+                border: @pale-aqua-b;
                 display:block;
                 z-index:999;
             }
@@ -119,11 +139,20 @@
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
                 grid-gap: 1rem;
                 align-items: center;
+
+                @media @phone {
+                    display: flex;
+                    flex-flow: column wrap;
+                }
             }
             .grid img {
                 border: 1px solid black;
                 box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
                 max-width: 100%;
+
+                @media @phone {
+                    margin: 1rem;
+                }
             }
 
             .grid .book1:hover {
@@ -138,14 +167,18 @@
             top: 100%;
             width: 100%;
             background: rgba(0,0,0,.7);
-            width: 75%;
-            height: 75%;
+            max-width: 55%;
+            height: 55%;
             opacity: 0;
             -webkit-transition: opacity .5s ease-in-out;
             -moz-transition: opacity .5s ease-in-out;
             -o-transition: opacity .5s ease-in-out;
             transition: opacity .5s ease-in-out;
             overflow: hidden;
+
+            @media @phone {
+                background: rgba(2, 164, 192, 0.836)
+            }
         }
 
         //styles and adds transtion to the picture
@@ -157,14 +190,19 @@
             left:0;
             right:0;
             bottom: 0;
-            height: 60%;
-            width: 45%;
+            max-width: 70%;
+            max-height: 70%;
             box-shadow: 0px 0px 8px rgba(0,0,0,.3);
             box-sizing: border-box;
             -webkit-transition: .5s ease-in-out;
             -moz-transition: .5s ease-in-out;
             -o-transition: .5s ease-in-out;
             transition: .5s ease-in-out;
+
+            @media @phone {
+                height: 55%;
+                width: 55%;
+            }
         }
 
         a.popup-close {
@@ -223,7 +261,7 @@
         .popup-target:target {
             opacity: 1;
             top: 0;
-            bottom: 0;
+            bottom: 1;
         }
 
         .popup-target:target img {
@@ -240,40 +278,12 @@
             max-width: 700px;
             text-align: center;
             color: white;
-            padding: 50px;
+            padding: 30px;
             height: 200px;
         }
 
 }
 
 
-
-
-
-
-// .grid .book2:hover {
-// opacity: .5;
-// box-shadow: 2px 2px 6px 0px  rgba(1, 177, 45, 0.534);
-// }
-
-// .grid .book3:hover {
-// opacity: .5;
-// box-shadow: 2px 2px 6px 0px  rgba(177, 159, 1, 0.534);
-// }
-
-// .grid .book4:hover {
-// opacity: .5;
-// box-shadow: 2px 2px 6px 0px  rgba(173, 243, 92, 0.534);
-// }
-
-// .grid .book5:hover {
-// opacity: .5;
-// box-shadow: 2px 2px 6px 0px  rgba(177, 1, 104, 0.534);
-// }
-
-// .grid .book6:hover {
-// opacity: .5;
-// box-shadow: 2px 2px 6px 0px  rgba(255, 13, 1, 0.534);
-// }
 
 
