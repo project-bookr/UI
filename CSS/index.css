@@ -156,6 +156,11 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .nav-bar {
   display: flex;
   justify-content: flex-end;
@@ -288,24 +293,24 @@ footer .footer-text {
 .top-section .signbtn:focus {
   background-color: #BDD4E7;
 }
-.top-section .dropdown {
+.top-section .signdrop {
   position: relative;
   display: inline-block;
 }
-.top-section .dropdown-content {
+.top-section .signdrop-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
   width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.top-section .dropdown-content a {
+.top-section .signdrop-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-.top-section .dropdown-content a:hover {
+.top-section .signdrop-content a:hover {
   background-color: black;
 }
 .top-section .show {

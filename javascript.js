@@ -6,8 +6,6 @@ const booksImg1 = document.querySelector('.open-book');
 booksImg1.src = 'images/book.jpeg';
 
 
-
-
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
