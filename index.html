@@ -22,6 +22,7 @@
 <body>
 
     <div class="nav-bar">
+        <img src=images/border-photo.jpeg class="border" alt="border">
 
         <button><img src="images/icon1.png"></button>
         <nav class="dropdown">
@@ -31,7 +32,6 @@
             <a href="#">Contact Us</a>
             <a href="#">SignUp </a>
         </nav>
-        <img src=images/border-photo.jpeg class="border" alt="border">
     </div>
 
      
@@ -52,9 +52,18 @@
             <p class="top"> Our platform helps put books in the hands of book lovers faster and easier! Scroll through
                 our
                 books and enjoy your adventure. </p>
-            <a href="#">
-                <div class="btn"><i class="fa fa-book"></i> Sign up</div>
-            </a>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="signbtn"> <i class="fa fa-book"></i> Sign Up</button>
+            <div id="myDropdown" class="dropdown-content">
+                <form action="">
+                    <p>Welcome!</p>
+                    Username: <input type="text" name="username" /> </br>
+                    Password: <input type="text" name="username" /> </br>
+                    <input class="submit" type="submit" value="Sign In" />
+                </form>
+            </div>
+        </div>
 
             <div class="section-bar">
 
@@ -166,7 +175,7 @@
 
     </div>
 
-      <script src="javascript.js"></script>
+      <script src="javascript.js">  </script>
 
 </body>
 

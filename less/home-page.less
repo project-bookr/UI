@@ -44,58 +44,86 @@
                 }
             }
 
-            a {
-                text-decoration: none;
-                font-size: 1.5rem;
-                color: #373E40;
+        .signbtn {
+            width: 8rem;
+            height: 2rem;
+            text-align: center;
+            background-color: #FCFCFC;
+            border: 1px solid #373E40;
+            text-align: center;
+            margin-top: 1.5rem;
+            border-radius: 5px;
+        }
+    
+        .signbtn:hover, .signbtn:focus {
+            background-color: #BDD4E7;
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+        .dropdown-content a:hover {
+            background-color: #ddd
             }
 
-            a .btn {
-                width: 8rem;
-                height: 2rem;
-                text-align: center;
-                background-color: #FCFCFC;
-                border: 1px solid #373E40;
-                text-align: center;
-                margin-top: 1.5rem;
-                border-radius: 5px;
-            }
 
-            a .btn:hover {
-                background-color: #BDD4E7;
-            }
+        .show {
+            display:block;
+        }
 
-            .section-bar {
-                background-color: @pale-aqua;
-                border: @old-lav-b;
-                width: 95%;
-                height: 2rem;
-                margin-top: 3rem; 
-                margin-bottom: .5rem;
-                border-radius: 10px;
-            }
+        .section-bar {
+            background-color: @pale-aqua;
+            border: @old-lav-b;
+            width: 95%;
+            height: 2rem;
+            margin-top: 3rem; 
+            margin-bottom: .5rem;
+            border-radius: 10px;
+        }
 
-            .section-bar:hover {
-                position:relative;
-                width: 95%;
-                background-color: @old-lav;
-                border: @pale-aqua-b;
-                display:block;
-                z-index:999;
-            }
+        .section-bar:hover {
+            position:relative;
+            width: 95%;
+            background-color: @old-lav;
+            border: @pale-aqua-b;
+            display:block;
+            z-index:999;
+        }
 
-            h2 {
-                font-size: 4rem;
-                margin-top: 3rem;
-                margin-bottom: 2rem;
-            }
+        h2 {
+            font-size: 4rem;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
 
-            .btm {
-                font-size: 1.5rem;
-                width: 60%;
-                text-align: center;
-                margin-bottom: 2rem;
-            }
+        .btm {
+            font-size: 1.5rem;
+            width: 60%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
         
 
 }
@@ -281,6 +309,8 @@
         }
 
 }
+
+
 
 
 
