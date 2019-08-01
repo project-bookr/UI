@@ -9,5 +9,41 @@
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-// const hColor = document.querySelectorAll('h2');
-// hColor.style.color = 'pink';
+
+
+const team = [
+  { name: "Oksana Kril", 
+  job: "UI Developer", 
+  img: "Images/oksana.png" },
+  { name: "Adam Penman", 
+  job: "UI Developer", 
+  img: "Images/adam.png" },
+  { name: "Tucker Wray", 
+  job: "Front-End Dev", 
+  img: "Images/tucker.png" },
+  { name: "Leslie Thompson", 
+  job: "Inspirational TL", 
+  img: "Images/leslie.png" }
+]
+
+let aboutUs = document.getElementById("the-team")
+
+function teamPerson(cohort) {
+  const div = document.createElement("div")
+  const memberDetails = `
+   <div>
+    <h3>${cohort.name}</h3>
+    <h4>${cohort.job}</h4>
+  </div>
+  <img src="${cohort.img}"/>
+ `
+  div.innerHTML = memberDetails
+  div.classList.add('person-id')
+  return div
+}
+
+team.forEach((cohort) => {
+  let newPerson = teamPerson(cohort)
+  aboutUs.appendChild(newPerson)
+})
+
