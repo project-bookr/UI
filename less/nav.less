@@ -1,49 +1,134 @@
-.nav-bar {
+// ----- navigation for home page
+.nav-bar1 {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 1rem;
+  @media @phone {
+    justify-content: center;
+    height: 10rem;
+    text-align: center;
+  }
+
+  button {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    border: none;
+    float: right;
+    cursor: pointer;
+
+    img {
+      width: 150%;
+      height: 150%;
+    }
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  
+    a {
+      float: none;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: right;
+      font-size: 2rem;
+      color: black;
+      cursor: pointer;
+
+      @media @phone{
+        display: inline-flex;
+        padding: 0.1rem 1rem;
+                
+      }
+    }
+    a:hover {
+      background-color: @main-color;
+      color: white;
+    }
+  }
 }
 
-.nav-bar button {
-  width: 6rem;
-  height: 6rem;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  background-color: transparent;
-  border: solid 0.1rem black;
-  float: right;
-  cursor: pointer;
-}
-.nav-bar button img {
-  width: 150%;
-  height: 150%;
-}
-.dropdown {
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
-.dropdown a {
-  float: none;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: right;
-  font-size: 2rem;
-  color: black;
-  cursor: pointer;
-}
-.dropdown a:hover {
-  background-color: gray;
-  color: white;
-}
-.nav-bar:hover .dropdown {
+
+.nav-bar1:hover .dropdown {
   display: block;
   margin-top: 6rem;
+}
+
+
+
+// --- navigation for about us, contact us
+.nav-bar2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 1rem;
+  @media @phone {
+    justify-content: center;
+    height: 10rem;
+    text-align: center;
+  }
+
+  button {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    border: none;
+    float: right;
+    cursor: pointer;
+
+    img {
+      width: 150%;
+      height: 150%;
+    }
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  
+    a {
+      float: none;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: inline-flex;
+      text-align: right;
+      font-size: 2rem;
+      color: black;
+      cursor: pointer;
+
+      @media @phone{
+        display: inline-flex;
+        padding: 0.1rem 1rem;
+                
+      }
+    }
+    a:hover {
+      background-color: @main-color;
+      color: white;
+    }
+  }
+}
+
+
+.nav-bar2:hover .dropdown {
+  display: block;
+  margin-top: 2rem;
+  padding-right: 6rem;
 }
 .border {
     width: 85%;

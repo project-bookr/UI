@@ -1,9 +1,9 @@
 
 
-const bookImg = document.querySelector('.book1');
-bookImg.src = 'images/three-books.jpg';
-const booksImg1 = document.querySelector('.open-book');
-booksImg1.src = 'images/book.jpeg';
+// const bookImg = document.querySelector('.book1');
+// bookImg.src = 'images/three-books.jpg';
+// const booksImg1 = document.querySelector('.open-book');
+// booksImg1.src = 'images/book.jpeg';
 
 
 function myFunction() {
