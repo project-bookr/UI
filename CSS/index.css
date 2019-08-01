@@ -281,15 +281,26 @@ body {
   margin-top: 2rem;
   padding-right: 6rem;
 }
+@media (max-width: 500px) {
+  .nav-bar2:hover .dropdown {
+    margin-top: 6rem;
+  }
+}
 .border {
   width: 85%;
   height: 60px;
   border: 1px solid black;
 }
+@media (max-width: 500px) {
+  .border {
+    display: none;
+  }
+}
 footer {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 footer .footer-text {
   text-align: center;
