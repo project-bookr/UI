@@ -220,11 +220,29 @@ body {
   display: block;
   margin-top: 6rem;
 }
+
+/* .border {
+  width: 85%;
+  height: 60px;
+  border: 1px solid black;
+}
+footer .section-bar {
+  background-color: #BDD4E7;
+  width: 95%;
+  height: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  border: 0.1rem solid #6F5E76;
+  border-radius: 10px;
+} */
+
 .nav-bar2 {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 1rem;
+
 }
 @media (max-width: 500px) {
   .nav-bar2 {
@@ -358,12 +376,7 @@ footer .footer-text button:hover a {
     width: 50%;
   }
 }
-.top-section a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #373E40;
-}
-.top-section a .btn {
+.top-section .signbtn {
   width: 8rem;
   height: 2rem;
   background-color: #FCFCFC;
@@ -372,8 +385,32 @@ footer .footer-text button:hover a {
   margin-top: 1.5rem;
   border-radius: 5px;
 }
-.top-section a .btn:hover {
+.top-section .signbtn:hover,
+.top-section .signbtn:focus {
   background-color: #BDD4E7;
+}
+.top-section .signdrop {
+  position: relative;
+  display: inline-block;
+}
+.top-section .signdrop-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.top-section .signdrop-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.top-section .signdrop-content a:hover {
+  background-color: black;
+}
+.top-section .show {
+  display: block;
 }
 .top-section .section-bar {
   background-color: #BDD4E7;
@@ -390,7 +427,6 @@ footer .footer-text button:hover a {
   background-color: #6F5E76;
   border: 0.1rem solid #BDD4E7;
   display: block;
-  z-index: 999;
 }
 .top-section h2 {
   font-size: 4rem;
@@ -422,7 +458,6 @@ footer .footer-text button:hover a {
   background-color: #6F5E76;
   border: 0.1rem solid #BDD4E7;
   display: block;
-  z-index: 999;
 }
 .btm-section h2 {
   font-size: 4rem;
@@ -469,6 +504,7 @@ footer .footer-text button:hover a {
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   overflow: hidden;
+  z-index: 1;
 }
 @media (max-width: 500px) {
   .btm-section .popup-target {
@@ -556,9 +592,11 @@ footer .footer-text button:hover a {
   width: 100%;
   max-width: 700px;
   text-align: center;
-  color: white;
+  color: black;
   padding: 30px;
   height: 200px;
+  position: absolute;
+  top: 10%;
 }
 .about {
   perspective: 1px;
