@@ -281,21 +281,25 @@ body {
   margin-top: 2rem;
   padding-right: 6rem;
 }
+
 @media (max-width: 500px) {
   .nav-bar2:hover .dropdown {
     margin-top: 6rem;
   }
 }
+
 .border {
   width: 85%;
   height: 60px;
   border: 1px solid black;
 }
+
 @media (max-width: 500px) {
   .border {
     display: none;
   }
 }
+
 footer {
   display: flex;
   align-items: flex-end;
@@ -703,15 +707,20 @@ footer .footer-text button:hover a {
     background-color: #F9F9FD;
   }
 }
-.about .book {
+.about .coders {
   width: 40%;
   border-radius: 30%;
   opacity: 0.8;
 }
 @media (max-width: 500px) {
-  .about .book {
+  .about .coders {
     display: none;
   }
+}
+.about h4 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .about a {
   text-decoration: none;
