@@ -289,7 +289,7 @@ body {
 .border {
   width: 85%;
   height: 60px;
-  border: 1px solid black;
+  border: 1px solid #373E40;
 }
 @media (max-width: 500px) {
   .border {
@@ -398,6 +398,7 @@ footer .footer-text button:hover a {
   background-color: #f1f1f1;
   width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #373E40;
 }
 .top-section .section-bar:hover {
   position: relative;
@@ -549,7 +550,7 @@ footer .footer-text button:hover a {
   color: black;
   text-decoration: none;
   position: absolute;
-  top: -1px;
+  top: -5px;
   right: 0;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
@@ -560,10 +561,10 @@ footer .footer-text button:hover a {
   content: "";
   display: block;
   height: 35px;
-  width: 25px;
+  width: 10px;
   background: black;
   position: absolute;
-  left: 25px;
+  left: 20px;
   top: 10px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -574,10 +575,10 @@ footer .footer-text button:hover a {
   content: "";
   display: block;
   height: 35px;
-  width: 25px;
+  width: 10px;
   background: black;
   position: absolute;
-  right: 25px;
+  right: 20px;
   top: 10px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -630,7 +631,7 @@ footer .footer-text button:hover a {
 }
 .about .about-us h2 {
   font-size: 6rem;
-  margin-top: 13rem;
+  margin-top: 14rem;
   color: #373E40;
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: #F1DEDE;
@@ -640,6 +641,7 @@ footer .footer-text button:hover a {
     color: #F1DEDE;
     -webkit-text-stroke-width: 0.2rem;
     -webkit-text-stroke-color: #373E40;
+    margin-top: 7rem;
   }
 }
 .about .open_book {
