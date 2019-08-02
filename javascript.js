@@ -6,10 +6,15 @@
 // booksImg1.src = 'images/book.jpeg';
 
 
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+function changeButtonColor() {
 
+document.getElementById("myButton").style.backgroundColor = "green";
+
+}
 
 const team = [
   { name: "Oksana Kril", 
@@ -47,3 +52,14 @@ team.forEach((cohort) => {
   aboutUs.appendChild(newPerson)
 })
 
+
+// let list = document.getElementById("the-team");
+// function shuffleTeam() {
+//   let people = list.children, i = 0;
+//   people = Array.prototype.sort.call(people);
+//   while( i < people.length) { 
+//     list.appendChild(people[i]);
+//     i++;
+//   }
+// }
+// shuffleTeam();
