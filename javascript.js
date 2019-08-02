@@ -10,11 +10,7 @@
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-function changeButtonColor() {
 
-document.getElementById("myButton").style.backgroundColor = "green";
-
-}
 
 const team = [
   { name: "Oksana Kril", 
@@ -63,3 +59,10 @@ team.forEach((cohort) => {
 //   }
 // }
 // shuffleTeam();
+
+
+// function changeButtonColor() {
+
+// document.getElementById("myButton").style.backgroundColor = "green";
+
+// }
