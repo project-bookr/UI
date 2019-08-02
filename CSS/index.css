@@ -631,7 +631,7 @@ footer .footer-text button:hover a {
 }
 .about .about-us h2 {
   font-size: 6rem;
-  margin-top: 14rem;
+  margin-top: 16rem;
   color: #373E40;
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: #F1DEDE;
@@ -805,5 +805,73 @@ footer .footer-text button:hover a {
   }
   100% {
     border-color: transparent;
+  }
+}
+.about_book {
+  display: flex;
+  flex-wrap: wrap;
+  direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem auto;
+}
+.about_book h2 {
+  text-align: center;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .about_book h2 {
+    padding: 1rem;
+  }
+}
+.about_book .description {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .about_book .description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about_book .description img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .about_book .description img {
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: contain;
+    padding: 1rem;
+  }
+}
+.about_book .description .paragraphs {
+  font-size: 1.6rem;
+  justify-content: center;
+}
+.about_book .description .paragraphs p {
+  padding: 1rem;
+  text-align: center;
+}
+.back {
+  font-size: 2rem;
+  background-color: #6F5E76;
+  border: none;
+  color: white;
+  padding: 1rem;
+  margin-left: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .back {
+    font-size: 1.5rem;
+    padding: 0.7rem;
   }
 }
